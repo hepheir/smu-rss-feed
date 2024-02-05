@@ -44,5 +44,6 @@ jobs:
         commit_message: "docs(feed.xml): automatic update"
         allow_empty_commit: false
         verbose: true
+        jekyll: false
       env:
         GITHUB_TOKEN: ${{ github.token }}
