@@ -28,6 +28,8 @@ feed = FeedGenerator()
 
 
 def serialize(filename: os.PathLike) -> None:
+    if not os.path.exists(os.path.dirname(filename)):
+        os.makedirs(os.path.dirname(filename))
     feed.sort()
     feed.rss_file(filename, pretty=True, xml_declaration=True)
 
@@ -91,7 +93,7 @@ def _pull_from_bbs(url: str) -> typing.Iterable[feedgen.feed.FeedEntry]:
         yield entry
 
 if __name__ == '__main__':
-    FILENAME = 'feed.xml'
+    FILENAME = 'docs/feed.xml'
 
     sync()
     serialize(FILENAME)
