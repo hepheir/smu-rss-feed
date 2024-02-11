@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>상명대학교 SW중심사업단 공지사항</title>
+    <link>https://github.com/hepheir/smu-rss-feed</link>
+    <description>상명대학교 SW중심사업단 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다. [제작자: 김동주 &lt;hepheir@gmail.com&gt;]</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Sun, 11 Feb 2024 16:52:18 +0000</lastBuildDate>
+    <item>
+      <title>수혜학생 대상 자료조사 서식</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=351</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=351</guid>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2023년도 우수 현장실습 보고서 공모전 수상자 발표 및 상금 지급 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3137</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3137</guid>
+      <pubDate>Mon, 18 Dec 2023 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2023학년도 동계방학 SW중심대학사업 현장실습 모집공고</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3139</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3139</guid>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2023년 12월 29일(금) SW중심대학사업단 단축 운영 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3140</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3140</guid>
+      <pubDate>Wed, 27 Dec 2023 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024년 SW중심대학 학생연구원 모집</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3141</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3141</guid>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2023학년도 제2학기 오픈소스 SW 역량강화 프로그램 신청 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3142</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3142</guid>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>SW중심대학사업단 동계방학 단축운영 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3143</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3143</guid>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2023학년도 동계방학 SW중심대학사업 현장실습 선발자 발표</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3144</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3144</guid>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>[IITP] 2024년도 SW마에스트로 과정 제15기 연수생 모집(1. 8.(월) ~ 2. 7.(수) 17:…</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3145</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3145</guid>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>[OSS Resume] 2023학년도 제2학기 오픈소스 SW 역량강화 프로그램 수준별 이수자 공지</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3146</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3146</guid>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024년 AWS Cloud 기반 특별 교육과정 모집공고</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3147</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3147</guid>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024학년도 1학기 '컴퓨팅사고와데이터의이해' TA 선발 공고</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3148</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3148</guid>
+      <pubDate>Mon, 29 Jan 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024년 AWS Cloud 기반 특별 교육과정 선발자 발표 및 오리엔테이션 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3149</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3149</guid>
+      <pubDate>Tue, 06 Feb 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024학년도 1학기 '컴퓨팅사고와데이터의이해' 교과목 TA 선발 결과 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3150</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3150</guid>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024년 2월 8일(목) SW중심대학사업단 업무시간 변경 안내</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3151</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3151</guid>
+      <pubDate>Wed, 07 Feb 2024 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
