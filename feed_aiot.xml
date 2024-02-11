@@ -6,7 +6,7 @@
     <description>상명대학교 지능IOT융합전공 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다. [제작자: 김동주 &lt;hepheir@gmail.com&gt;]</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Sun, 11 Feb 2024 16:52:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2024 17:19:25 +0000</lastBuildDate>
     <item>
       <title>2023학년도 2학기 이수구분 정정 신청 안내 자세히 보기</title>
       <link>https://aiot.smu.ac.kr/aiot/community/notice.do?mode=view&amp;articleNo=739193&amp;article.offset=0&amp;articleLimit=10</link>
