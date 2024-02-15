@@ -12,7 +12,7 @@ on:
   schedule:
     # POSIX cron syntax:
     # https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07
-    - cron: '0 0 * * *' # 매일 자정에 실행
+    - cron: '0 0,12 * * *' # 매일 자정에 실행
 
 permissions:
   contents: write
