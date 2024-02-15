@@ -6,7 +6,7 @@
     <description>상명대학교 SW중심사업단 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다. [제작자: 김동주 &lt;hepheir@gmail.com&gt;]</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Thu, 15 Feb 2024 00:09:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Feb 2024 15:23:38 +0000</lastBuildDate>
     <item>
       <title>수혜학생 대상 자료조사 서식</title>
       <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=351</link>
