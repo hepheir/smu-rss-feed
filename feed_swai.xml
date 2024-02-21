@@ -6,18 +6,12 @@
     <description>상명대학교 SW중심사업단 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다. [제작자: 김동주 &lt;hepheir@gmail.com&gt;]</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
-    <lastBuildDate>Tue, 20 Feb 2024 12:05:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Feb 2024 00:13:41 +0000</lastBuildDate>
     <item>
       <title>수혜학생 대상 자료조사 서식</title>
       <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=351</link>
       <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=351</guid>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>2023학년도 동계방학 SW중심대학사업 현장실습 모집공고</title>
-      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3139</link>
-      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3139</guid>
-      <pubDate>Fri, 22 Dec 2023 00:00:00 +0900</pubDate>
     </item>
     <item>
       <title>2023년 12월 29일(금) SW중심대학사업단 단축 운영 안내</title>
@@ -96,6 +90,12 @@
       <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3152</link>
       <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3152</guid>
       <pubDate>Fri, 16 Feb 2024 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>2024학년도 입학 전 SW교육 참가자 모집('24. 2. 21.(수)~2. 25.(일))</title>
+      <link>https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3153</link>
+      <guid isPermaLink="false">https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01&amp;wr_id=3153</guid>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
