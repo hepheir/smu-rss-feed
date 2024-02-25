@@ -1,6 +1,6 @@
-from automation import FeedCreateJob
-from automation import create_all
-from crawlers import *
+from .automation import FeedCreateJob
+from .automation import create_all
+from .crawlers import *
 
 
 jobs = [

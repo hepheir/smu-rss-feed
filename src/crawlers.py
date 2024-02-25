@@ -8,9 +8,9 @@ from bs4 import BeautifulSoup
 from bs4 import Tag
 import requests
 
-from article import Article
-from utils import fix_img_urls
-from utils import TIMEZONE
+from .article import Article
+from .utils import fix_img_urls
+from .utils import TIMEZONE
 
 
 class ArticleCrawler(abc.ABC):

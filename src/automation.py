@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from typing import Iterable
 
-from article import ArticleFeedEntryAdaptor
-from crawlers import ArticleCrawler
-from feed import Feed
+from .article import ArticleFeedEntryAdaptor
+from .crawlers import ArticleCrawler
+from .feed import Feed
 
 
 @dataclass

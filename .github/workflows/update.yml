@@ -33,7 +33,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Generate feed.xml
-      run: python src/__main__.py
+      run: python -m src
     - name: Push to the output branch
       uses: crazy-max/ghaction-github-pages@v3.1.0
       with:
