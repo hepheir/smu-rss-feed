@@ -18,3 +18,20 @@
 * [iOS](https://apps.apple.com/kr/app/feedly-smart-news-reader/id396069556)
 
 ![image](https://github.com/hepheir/smu-rss-feed/assets/19310326/3a63bd0e-8f15-40fb-869b-5e498a702fa8)
+
+## 변경 사항
+
+2024-02-12
+
+- 최초 배포 시작, 에브리타임에 관련 글 게시.
+- UTC 기준 매일 자정에 피드 목록을 자동적으로 갱신되도록 함.
+    - GitHub Actions의 `cron` 스케쥴러 이용
+
+2024-02-16
+- UTC 기준 매일 정오에도 피드 목록을 추가로 갱신하도록 함.
+    - 매일 12:00, 24:00에 두 차례 갱신
+
+2024-02-25
+
+- xml 주소 패턴을 `/smu-rss-feed/feed_<학과>.xml` 에서 `/smu-rss-feed/<학과>/feed.xml`로 변경.
+    - 기존 url로 구독 중이던 사람들을 위해 기존 경로는 symlink로 대체하여 기존 url의 호환성을 유지함.
