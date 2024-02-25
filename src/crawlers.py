@@ -23,7 +23,7 @@ class ArticleCrawler(abc.ABC):
 
 class HtmlArticleCrawler(ArticleCrawler):
     def get_articles(self) -> Iterable[Article]:
-        logging.debug(f'start crawling...')
+        logging.debug(f'start crawling... @ {self.__class__.__repr__(self)}')
         for url in self._list_article_urls():
             logging.debug(f'\tstart crawling article from {url}...')
             yield self._get_article(url)
@@ -43,6 +43,9 @@ class HtmlArticleCrawler(ArticleCrawler):
 class CommunityHtmlArticleCrawler(HtmlArticleCrawler):
     def __init__(self, url: str) -> None:
         self.url = url
+
+    def __repr__(self) -> str:
+        return f'<ArticleCrawler for "{self.url}">'
 
     def _list_article_urls(self):
         html = safe_https_get(self.url).text
@@ -94,6 +97,9 @@ class CommunityHtmlArticleCrawler(HtmlArticleCrawler):
 class BbsHtmlArticleCrawler(HtmlArticleCrawler):
     def __init__(self, url: str) -> None:
         self.url = url
+
+    def __repr__(self) -> str:
+        return f'<ArticleCrawler for "{self.url}">'
 
     def _list_article_urls(self):
         html = safe_https_get(self.url).text

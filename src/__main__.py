@@ -1,3 +1,4 @@
+import urllib3
 import logging
 
 from .automation import FeedCreateJob
@@ -6,6 +7,7 @@ from .crawlers import *
 
 
 logging.basicConfig(level=logging.DEBUG)
+logging.getLogger(urllib3.__name__).setLevel(level=logging.WARNING)
 
 
 jobs = [

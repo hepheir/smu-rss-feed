@@ -22,4 +22,4 @@ class ArticleFeedEntryAdaptor(FeedEntry):
         self.link(href=article.url, rel='alternate')
         self.author(name=article.author)
         self.published(article.date)
-        self.content(src=article.url)
+        self.content(content=article.content)
