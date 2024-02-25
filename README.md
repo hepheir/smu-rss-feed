@@ -35,3 +35,7 @@
 
 - xml 주소 패턴을 `/smu-rss-feed/feed_<학과>.xml` 에서 `/smu-rss-feed/<학과>/feed.xml`로 변경.
     - 기존 url로 구독 중이던 사람들을 위해 기존 경로는 symlink로 대체하여 기존 url의 호환성을 유지함.
+
+## 참고 문서
+
+- <https://datatracker.ietf.org/doc/html/rfc3987>
