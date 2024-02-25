@@ -1,23 +1,61 @@
 # 상명대학교 공지사항 RSS Feed
 
-> 매번 학과 사무실 홈페이지 찾아보기가 번거로워서 만들었습니다.
+매번 학과 사무실 홈페이지 찾아보기가 번거로워서 만들었는데, 만들고보니 다른 사람들에게도 좀 쓸만하지 않나 싶어서 공유합니다.
 
-## RSS 링크
+필요에 의해 만든거라 아래 3개 부서의 공지사항 밖에 없습니다. RSS 피드이니 구독할 줄 아는 사람은 알아서 잘 쓰시리라 믿습니다.
 
-* [SW중심사업단 RSS Feed 🔗](https://hepheir.github.io/smu-rss-feed/feed_cs.xml)
+---
 
-* [컴퓨터과학과 RSS Feed 🔗](https://hepheir.github.io/smu-rss-feed/feed_cs.xml)
+🔗 SW중심사업단 RSS Feed
+```
+https://hepheir.github.io/smu-rss-feed/swai/feed.xml
+```
 
-* [지능IOT융합전공 RSS Feed 🔗](https://hepheir.github.io/smu-rss-feed/feed_cs.xml)
+🔗 컴퓨터과학과 RSS Feed
+```
+https://hepheir.github.io/smu-rss-feed/cs/feed.xml
+```
+
+🔗 지능IOT융합전공 RSS Feed
+```
+https://hepheir.github.io/smu-rss-feed/aiot/feed.xml
+```
+
+---
+
+자동 업데이트 주기는 하루 2회, 매일 자정과 정오에 업데이트 됩니다.
 
 ## Tips
 
 저는 Feedly 라는 앱을 사용해 아래 화면과 같이 배경 위젯에 등록해두고 보는 편입니다.
 
-* [Android](https://play.google.com/store/apps/details?id=com.devhd.feedly) <sub>(저는 iPhone 사용자라 안드로이드에서 잘 되는지는 모르겠습니다.)</sub>
-* [iOS](https://apps.apple.com/kr/app/feedly-smart-news-reader/id396069556)
+iOS
+- <https://apps.apple.com/kr/app/feedly-smart-news-reader/id396069556>
 
-![image](https://github.com/hepheir/smu-rss-feed/assets/19310326/3a63bd0e-8f15-40fb-869b-5e498a702fa8)
+Android (저는 iPhone 사용자라 안드로이드에서 잘 되는지는 모르겠습니다.)
+- <https://play.google.com/store/apps/details?id=com.devhd.feedly>
+
+## RSS 피드란?
+
+RSS 피드라는건, 간단하게 말하면 게시판 내용을 XML 이라는 파일 형식으로 인터넷 사이트가 제공하는 거에요.
+
+RSS 형태로 제공되는 XML을 읽기 위해 사용하는 프로그램을 'RSS 리더'라고 하는데,
+이는 PC나 모바일기기에서 내가 구독하고자 하는 사이트가 제공하는 RSS 피드(XML 파일)을 주기적으로 읽어와
+추가된 내용이 있는지 정리해서 사용자한테 보여주는 것이구요.
+
+제가 주로 쓰는 RSS 리더 중 하나가 Feedly인 셈입니다.
+
+![모바일 배경화면 위젯](https://github.com/hepheir/smu-rss-feed/assets/19310326/3a63bd0e-8f15-40fb-869b-5e498a702fa8)
+
+Feedly 앱에서 피드를 등록하는 방법은 아래 설명을 참고하시기 바랍니다.
+
+![Feedly 위젯 등록 방법](https://github.com/hepheir/smu-rss-feed/assets/19310326/52c8e772-dc3d-4bad-9455-ca3e25877125)
+
+위 과정을 통해 위젯을 생성하면 첫 번째 사진과 같은 모습이 됩니다.
+
+![iPad에서 응용](https://github.com/hepheir/smu-rss-feed/assets/19310326/d4fe0da9-cbd1-4dda-860a-7c399e5c4854)
+
+응용하면 이렇게 패드에서 모아놓고 볼 수도 있습니다.
 
 ## 변경 사항
 
