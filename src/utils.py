@@ -1,9 +1,12 @@
 from datetime import timedelta
 from datetime import timezone
 from urllib.parse import urljoin
+from urllib3.util.retry import Retry
 
 from bs4 import Tag
-
+from requests import Session
+from requests import Response
+from requests.adapters import HTTPAdapter
 
 TIMEZONE = timezone(timedelta(hours=9))
 
@@ -20,3 +23,12 @@ def fix_img_urls(root: Tag, url: str) -> Tag:
     for img in root.select('img'):
         img.attrs['src'] = urljoin(url, img.attrs['src'])
     return root
+
+
+def safe_https_get(url: str) -> Response:
+    session = Session()
+    retry = Retry(connect=3, backoff_factor=0.5)
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+    return session.get(url)
