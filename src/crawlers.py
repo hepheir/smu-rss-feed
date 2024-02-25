@@ -6,10 +6,10 @@ from urllib.parse import parse_qs
 
 from bs4 import BeautifulSoup
 from bs4 import Tag
-import requests
 
 from .article import Article
 from .utils import fix_img_urls
+from .utils import safe_https_get
 from .utils import TIMEZONE
 
 
@@ -41,7 +41,7 @@ class CommunityHtmlArticleCrawler(HtmlArticleCrawler):
         self.url = url
 
     def _list_article_urls(self):
-        html = requests.get(self.url).text
+        html = safe_https_get(self.url).text
         soup = BeautifulSoup(html, 'html.parser')
         selector_path = 'ul.board-thumb-wrap dl'
         for dl in soup.select(selector_path):
@@ -51,7 +51,7 @@ class CommunityHtmlArticleCrawler(HtmlArticleCrawler):
             yield abs_href
 
     def _get_article(self, url: str) -> Article:
-        html = requests.get(url).text
+        html = safe_https_get(url).text
         soup = BeautifulSoup(html, 'html.parser')
         return Article(
             id=self.__get_id(url),
@@ -92,7 +92,7 @@ class BbsHtmlArticleCrawler(HtmlArticleCrawler):
         self.url = url
 
     def _list_article_urls(self):
-        html = requests.get(self.url).text
+        html = safe_https_get(self.url).text
         soup = BeautifulSoup(html, 'html.parser')
         selector_path = 'form#fboardlist tbody tr'
         for tr in soup.select(selector_path):
@@ -102,7 +102,7 @@ class BbsHtmlArticleCrawler(HtmlArticleCrawler):
             yield abs_href
 
     def _get_article(self, url: str) -> Article:
-        html = requests.get(url).text
+        html = safe_https_get(url).text
         soup = BeautifulSoup(html, 'html.parser')
         return Article(
             id=self.__get_id(url),
