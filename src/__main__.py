@@ -1,6 +1,11 @@
+import logging
+
 from .automation import FeedCreateJob
 from .automation import create_all
 from .crawlers import *
+
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 jobs = [
@@ -13,7 +18,7 @@ jobs = [
         rss_filename='docs/cs/feed.xml',
     ),
     FeedCreateJob(
-        crawler=CommunityHtmlArticleCrawler('https://aiot.smu.ac.kr/cs/community/notice.do'),
+        crawler=CommunityHtmlArticleCrawler('https://aiot.smu.ac.kr/aiot/community/notice.do'),
         id='https://aiot.smu.ac.kr',
         url='https://aiot.smu.ac.kr',
         title='지능IOT융합전공',
