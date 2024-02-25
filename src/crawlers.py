@@ -1,5 +1,6 @@
 import abc
 from datetime import datetime
+import logging
 from typing import Iterable
 from urllib.parse import urljoin
 from urllib.parse import parse_qs
@@ -22,8 +23,11 @@ class ArticleCrawler(abc.ABC):
 
 class HtmlArticleCrawler(ArticleCrawler):
     def get_articles(self) -> Iterable[Article]:
+        logging.debug(f'start crawling...')
         for url in self._list_article_urls():
+            logging.debug(f'\tstart crawling article from {url}...')
             yield self._get_article(url)
+        logging.debug(f'done crawling.')
 
     @abc.abstractmethod
     def _list_article_urls(self, *args, **kwargs) -> Iterable[str]:

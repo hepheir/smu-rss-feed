@@ -1,6 +1,11 @@
+import logging
+
 from .automation import FeedCreateJob
 from .automation import create_all
 from .crawlers import *
+
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 jobs = [
