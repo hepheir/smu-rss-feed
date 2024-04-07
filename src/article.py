@@ -1,5 +1,6 @@
 import dataclasses
 import datetime
+import typing
 
 from feedgen.feed import FeedEntry
 
@@ -7,11 +8,11 @@ from feedgen.feed import FeedEntry
 @dataclasses.dataclass
 class Article:
     id: str
+    url: str
     title: str
     author: str
     date: datetime.datetime
-    content: str
-    url: str
+    content: typing.Optional[str] = dataclasses.field(default=None)
 
 
 class ArticleFeedEntryAdaptor(FeedEntry):
@@ -22,4 +23,4 @@ class ArticleFeedEntryAdaptor(FeedEntry):
         self.link(href=article.url, rel='alternate')
         self.author(name=article.author)
         self.published(article.date)
-        self.content(src=article.url)
+        self.content(content=article.content)

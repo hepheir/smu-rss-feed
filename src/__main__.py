@@ -1,38 +1,28 @@
+import urllib3
 import logging
+import json
+import pathlib
 
-from .automation import FeedCreateJob
-from .automation import create_all
-from .crawlers import *
-
+from article import ArticleFeedEntryAdaptor
+from crawler import SmuArticleCrawler
+from feed import Feed
 
 logging.basicConfig(level=logging.DEBUG)
+logging.getLogger(urllib3.__name__).setLevel(level=logging.WARNING)
 
 
-jobs = [
-    FeedCreateJob(
-        crawler=CommunityHtmlArticleCrawler('https://cs.smu.ac.kr/cs/community/notice.do'),
-        id='https://cs.smu.ac.kr',
-        url='https://cs.smu.ac.kr',
-        title='컴퓨터과학과',
-        description='상명대학교 컴퓨터과학과 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다.\n\n[제작자: 김동주 <hepheir@gmail.com>]',
-        rss_filename='docs/cs/feed.xml',
-    ),
-    FeedCreateJob(
-        crawler=CommunityHtmlArticleCrawler('https://aiot.smu.ac.kr/aiot/community/notice.do'),
-        id='https://aiot.smu.ac.kr',
-        url='https://aiot.smu.ac.kr',
-        title='지능IOT융합전공',
-        description='상명대학교 지능IOT융합전공 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다.\n\n[제작자: 김동주 <hepheir@gmail.com>]',
-        rss_filename='docs/aiot/feed.xml',
-    ),
-    FeedCreateJob(
-        crawler=BbsHtmlArticleCrawler('https://swai.smu.ac.kr/bbs/board.php?bo_table=07_01'),
-        id='https://swai.smu.ac.kr',
-        url='https://swai.smu.ac.kr',
-        title='SW중심사업단',
-        description='상명대학교 SW중심사업단 공지사항 게시판의 내용을 (Atom 기반) RSS Feed로 가공한 내용입니다.\n\n[제작자: 김동주 <hepheir@gmail.com>]',
-        rss_filename='docs/swai/feed.xml',
-    ),
-]
+REPOSITORY = pathlib.Path(__file__).parent.parent
 
-create_all(jobs)
+
+with open(REPOSITORY / 'settings.json', 'r') as rfp:
+    for data in json.load(rfp)['feeds']:
+        feed = Feed(
+            id=data['id'],
+            url=data['href'],
+            title=data['title'],
+            description=data['description']
+        )
+        crawler = SmuArticleCrawler(data['src'])
+        for article in crawler.get_articles():
+            feed.add_entry(ArticleFeedEntryAdaptor(article))
+        feed.rss_file(REPOSITORY / data['output'])
